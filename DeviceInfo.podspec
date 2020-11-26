@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "DeviceInfo"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   
   spec.summary      = "Framework for getting device information"
   spec.description  = <<-DESC
@@ -20,10 +20,10 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Dmitry Kuleshov" => "kdv.mgn@gmail.com" }
 
-  spec.homepage     = "hhttps://github.com/kdvmgn/DeviceInfo.git"
+  spec.homepage     = "https://github.com/kdvmgn/DeviceInfo.git"
 
   spec.source       = { :git => "https://github.com/kdvmgn/DeviceInfo.git", :tag => spec.version.to_s }
-  spec.source_files  = "DeviceInfo/**/*"
+  spec.source_files  = "DeviceInfo/*.{h,m,swift}"
   spec.requires_arc = true
   spec.framework  = "UIKit"
   spec.swift_version = "5.0"

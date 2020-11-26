@@ -77,7 +77,9 @@
 		9E0350A3257044B6008B294F /* DeviceInfo */ = {
 			isa = PBXGroup;
 			children = (
-				9E0350CB2570469D008B294F /* Models */,
+				9E0350D22570545F008B294F /* DeviceModelName.swift */,
+				9E0350D625705523008B294F /* DeviceType.swift */,
+				9E0350DC257059D2008B294F /* ScreenSize.swift */,
 				9E0350A4257044B6008B294F /* DeviceInfo.h */,
 				9E0350A5257044B6008B294F /* Info.plist */,
 				9E0350C725704586008B294F /* DeviceInfo.swift */,
@@ -97,16 +99,6 @@
 				9E0350C12570453B008B294F /* Info.plist */,
 			);
 			path = SampleApp;
-			sourceTree = "<group>";
-		};
-		9E0350CB2570469D008B294F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9E0350D22570545F008B294F /* DeviceModelName.swift */,
-				9E0350D625705523008B294F /* DeviceType.swift */,
-				9E0350DC257059D2008B294F /* ScreenSize.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

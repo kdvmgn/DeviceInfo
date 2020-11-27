@@ -7,13 +7,13 @@
 
 import Foundation
 
-public enum DeviceType {
+public enum DeviceType: String{
     case iPod
     case iPhone
     case iPad
     case watch
-    case appleTV
-    case homePod
+    case appleTV = "Apple TV"
+    case homePod = "Home Pod"
     case simulator
     case unknown
 }

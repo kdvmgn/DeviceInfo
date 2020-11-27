@@ -1,6 +1,6 @@
 //
 //  ScreenSize.swift
-//  DeviceInfo
+//  DeviceSpec
 //
 //  Created by Дмитрий Кулешов on 27.11.2020.
 //

@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import DeviceInfo
+import DeviceSpec
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let deviceName = DeviceInfo.deviceModel
+        let deviceName = DeviceSpec.deviceModel
         // Do any additional setup after loading the view.
     }
 

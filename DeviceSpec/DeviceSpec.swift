@@ -1,13 +1,13 @@
 //
-//  DeviceInfo.swift
-//  DeviceInfo
+//  DeviceSpec.swift
+//  DeviceSpec
 //
 //  Created by Дмитрий Кулешов on 26.11.2020.
 //
 
 import UIKit
 
-open class DeviceInfo {
+open class DeviceSpec {
     
     // MARK: - Properties
     
@@ -87,8 +87,12 @@ open class DeviceInfo {
         }
     }
     
-    static var deviceModelName: String {
+    static public var deviceMarketingName: String {
         return deviceModel.rawValue
+    }
+    
+    static public var deviceModelID: String {
+        return deviceIdentifier()
     }
     
     // MARK: - Device type
@@ -128,7 +132,7 @@ open class DeviceInfo {
         return deviceType == .iPhone
     }
     
-    static public var isWhatch: Bool {
+    static public var isWatch: Bool {
         return deviceType == .watch
     }
     
@@ -144,6 +148,15 @@ open class DeviceInfo {
     
     static public var isRetina: Bool {
         return UIScreen.main.scale > 1.0
+    }
+    
+    static public var isSmallScreen: Bool {
+        switch screenSize {
+        case .screen3_5in, .screen4in:
+            return true
+        default:
+            return false
+        }
     }
     
     static public var screenSize: ScreenSize {
@@ -191,7 +204,7 @@ open class DeviceInfo {
     }
 }
 
-fileprivate extension DeviceInfo {
+fileprivate extension DeviceSpec {
     
     // MARK: - Static properties
     
